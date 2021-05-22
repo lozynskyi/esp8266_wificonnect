@@ -6,3 +6,4 @@ Todo:
 3. ~~Add signal level display.~~
 4. Add telegram bot message send.
 5. Add pin control methods.
+6. Build shapr3D model for box.
