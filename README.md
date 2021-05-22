@@ -5,4 +5,4 @@ Todo:
 2. ~~Add html template for input config.~~
 3. ~~Add signal level display.~~
 4. Add telegram bot message send.
- 
+5. Add pin control methods.
