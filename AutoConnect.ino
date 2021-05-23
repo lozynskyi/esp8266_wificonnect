@@ -6,8 +6,6 @@
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
 
-
-
 #define BOT_TOKEN "0000000000000:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 const unsigned long BOT_MTBS = 500; // mean time between scan messages. Telegram max limit 30 request per second.
@@ -116,6 +114,7 @@ void setup()
   }
  
 }
+
 void loop() {
   if ((WiFi.status() == WL_CONNECTED))
   {
@@ -168,11 +167,13 @@ void launchWeb()
   Serial.println("");
   if (WiFi.status() == WL_CONNECTED)
     Serial.println("WiFi connected");
+ 
   Serial.print("Local IP: ");
   Serial.println(WiFi.localIP());
   Serial.print("SoftAP IP: ");
   Serial.println(WiFi.softAPIP());
   createWebServer();
+ 
   // Start the server
   server.begin();
   Serial.println("Server started");
