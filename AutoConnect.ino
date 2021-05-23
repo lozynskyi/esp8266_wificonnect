@@ -33,6 +33,14 @@ void setupAP(void);
 //Establishing Local server at port 80 whenever required
 ESP8266WebServer server(80);
 
+void handleNewMessages(int numNewMessages)
+{
+  for (int i = 0; i < numNewMessages; i++)
+  {
+    bot.sendMessage(bot.messages[i].chat_id, bot.messages[i].text, "");
+  }
+}
+
 void setup()
 {
  
