@@ -2,7 +2,11 @@
 #include <ESP8266HTTPClient.h>
 #include <ESP8266WebServer.h>
 #include <EEPROM.h>
- 
+
+#include <WiFiClientSecure.h>
+#include <UniversalTelegramBot.h>
+
+
 //Variables
 int i = 0;
 int statusCode;
