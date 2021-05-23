@@ -7,6 +7,16 @@
 #include <UniversalTelegramBot.h>
 
 
+
+#define BOT_TOKEN "0000000000000:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+const unsigned long BOT_MTBS = 500; // mean time between scan messages. Telegram max limit 30 request per second.
+
+X509List cert(TELEGRAM_CERTIFICATE_ROOT);
+WiFiClientSecure secured_client;
+UniversalTelegramBot bot(BOT_TOKEN, secured_client);
+unsigned long bot_lasttime; // last time messages' scan has been done
+
 //Variables
 int i = 0;
 int statusCode;
@@ -15,7 +25,6 @@ const char* passphrase = "text";
 String st;
 String content;
  
- 
 //Function Decalration
 bool testWifi(void);
 void launchWeb(void);
@@ -23,7 +32,7 @@ void setupAP(void);
  
 //Establishing Local server at port 80 whenever required
 ESP8266WebServer server(80);
- 
+
 void setup()
 {
  
