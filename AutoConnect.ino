@@ -49,6 +49,9 @@ void setup()
   Serial.println("Disconnecting previously connected WiFi");
   WiFi.disconnect();
   EEPROM.begin(512); //Initialasing EEPROM
+
+  secured_client.setTrustAnchors(&cert);
+  
   delay(10);
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.println();
@@ -81,6 +84,18 @@ void setup()
   if (testWifi())
   {
     Serial.println("Succesfully Connected!!!");
+
+      Serial.print("Retrieving time: ");
+      configTime(0, 0, "pool.ntp.org"); // get UTC time via NTP
+      time_t now = time(nullptr);
+      while (now < 24 * 3600)
+      {
+        Serial.print(".");
+        delay(100);
+        now = time(nullptr);
+      }
+      Serial.println(now);
+    
     return;
   }
   else
@@ -104,14 +119,22 @@ void setup()
 void loop() {
   if ((WiFi.status() == WL_CONNECTED))
   {
- 
-    for (int i = 0; i < 10; i++)
+
+    if (millis() - bot_lasttime > BOT_MTBS)
     {
       digitalWrite(LED_BUILTIN, HIGH);
-      delay(1000);
-      digitalWrite(LED_BUILTIN, LOW);
-      delay(1000);
+      int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+  
+      while (numNewMessages)
+      {
+        Serial.println("got response");
+        handleNewMessages(numNewMessages);
+        numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+      }
+  
+      bot_lasttime = millis();
     }
+    digitalWrite(LED_BUILTIN, LOW);
  
   }
   else
