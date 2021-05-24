@@ -126,7 +126,7 @@ void loop() {
   
       while (numNewMessages)
       {
-        Serial.println("got response");
+        Serial.println("Got response");
         handleNewMessages(numNewMessages);
         numNewMessages = bot.getUpdates(bot.last_message_received + 1);
       }
@@ -187,7 +187,7 @@ void setupAP(void)
   int n = WiFi.scanNetworks();
   Serial.println("scan done");
   if (n == 0)
-    Serial.println("no networks found");
+    Serial.println("No networks found");
   else
   {
     Serial.print(n);
@@ -221,7 +221,7 @@ void setupAP(void)
   }
   st += "</ol>";
   delay(100);
-  WiFi.softAP("how2electronics", "");
+  WiFi.softAP("BoringBoxElectronics", "");
   Serial.println("softap");
   launchWeb();
   Serial.println("over");
