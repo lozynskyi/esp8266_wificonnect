@@ -12,3 +12,4 @@ Todo:
 9. Add socket.io (client) for fast communication.
 10. Think about GSM internet communication.
 11. Add roadmap with mobile develpment.
+12. Integrate snippetserver/client in project.
