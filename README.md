@@ -6,7 +6,7 @@ Todo:
 3. ~~Add signal level display.~~
 4. ~~Add telegram bot message send.~~
 5. Add pin control methods.
-6. Build shapr3D model for box.
+6. ~~Build shapr3D model for box.~~
 7. Add how to setup esp board config, add photo for esp8266 D1 mini Pro.
 8. Refactor web-server (main page for wi-fi scan, select), add some styles. 
 9. Add socket.io (client) for fast communication.
