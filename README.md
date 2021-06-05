@@ -8,7 +8,7 @@ Todo:
 5. Add pin control methods.
 6. ~~Build shapr3D model for box.~~
 7. Add how to setup esp board config, add photo for esp8266 D1 mini Pro.
-8. Refactor web-server (main page for wi-fi scan, select), add some styles. 
+8. ~Refactor web-server (main page for wi-fi scan, select), add some styles.~ 
 9. Add socket.io (client) for fast communication.
 10. ~~Think about GSM internet communication.~~
 11. Add roadmap with mobile develpment.
