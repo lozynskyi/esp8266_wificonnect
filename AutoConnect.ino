@@ -18,8 +18,8 @@ unsigned long bot_lasttime; // last time messages' scan has been done
 //Variables
 int i = 0;
 int statusCode;
-const char* ssid = "text";
-const char* passphrase = "text";
+const char* ssid = "ssid";
+const char* passphrase = "password";
 String st;
 String content;
  
