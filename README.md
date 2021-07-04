@@ -11,6 +11,6 @@ Todo:
 8. ~~Refactor web-server (main page for wi-fi scan, select), add some styles.~~
 9. ? Add socket.io (client) for fast communication.
 10. ~~Think about GSM internet communication.~~
-11. Add roadmap with mobile develpment.
+11. Add roadmap with mobile develpment. (github project section)
 12. Integrate snippetserver/client in project.
 13. Add front app separately.
