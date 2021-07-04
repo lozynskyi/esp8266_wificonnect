@@ -13,3 +13,4 @@ Todo:
 10. ~~Think about GSM internet communication.~~
 11. Add roadmap with mobile develpment.
 12. Integrate snippetserver/client in project.
+13. Add front app separately.
