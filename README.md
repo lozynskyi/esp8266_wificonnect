@@ -13,3 +13,4 @@ Todo:
 10. ~~Think about GSM internet communication.~~
 11. Add roadmap with mobile develpment. (github project section)
 12. Integrate snippetserver/client in project. (Add front app separately.)
+13. Add status chek for servise provider.
