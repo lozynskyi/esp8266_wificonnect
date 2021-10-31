@@ -14,3 +14,4 @@ Todo:
 11. Add roadmap with mobile develpment. (github project section)
 12. Integrate snippetserver/client in project. (Add front app separately.)
 13. Add status chek for servise provider.
+14. Add UDP protocol data exchange.
