@@ -16,3 +16,4 @@ Todo:
 13. Add status chek for servise provider.
 14. Add UDP/MQTT protocol data exchange.
 15. Check save to flash connection credentials(problem after restart)
+16. Add A0 volatge measurement (esp-07 + voltages divider)
