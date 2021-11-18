@@ -13,7 +13,7 @@ Todo:
 10. ~~Think about GSM internet communication.~~
 11. ~~Add roadmap with mobile develpment. (github project section)~~ (boringbox.app)
 12. ~~Integrate snippetserver/client in project. (Add front app separately.)~~
-13. Add status chek for servise provider.
+13. Not relevant! ~~Add status chek for servise provider.~~
 14. Add UDP/MQTT protocol data exchange.
 15. Check save to flash connection credentials(problem after restart)
 16. Add A0 volatge measurement (esp-07 + voltages divider)
