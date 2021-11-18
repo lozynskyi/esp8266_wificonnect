@@ -11,7 +11,7 @@ Todo:
 8. ~~Refactor web-server (main page for wi-fi scan, select), add some styles.~~
 9. ~~? Add socket.io (client) for fast communication.~~
 10. ~~Think about GSM internet communication.~~
-11. Add roadmap with mobile develpment. (github project section)
+11. ~~Add roadmap with mobile develpment. (github project section)~~ (boringbox.app)
 12. Integrate snippetserver/client in project. (Add front app separately.)
 13. Add status chek for servise provider.
 14. Add UDP/MQTT protocol data exchange.
