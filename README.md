@@ -18,3 +18,4 @@ Todo:
 15. Check save to flash connection credentials(problem after restart)
 16. Add A0 volatge measurement (esp-07 + voltages divider)
 17. ~~Build esp-o7 on board prototype~~
+18. Add server pool config.
